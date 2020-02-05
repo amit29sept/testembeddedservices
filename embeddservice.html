@@ -27,20 +27,7 @@
         //embedded_svc.settings.storageDomain = 'yourdomain.com'; //(Sets the domain for your deployment so that visitors can navigate subdomains during a chat session)
 
         // Settings for Chat
-        embedded_svc.settings.directToButtonRouting = function(prechatFormData) {
-            // Dynamically changes the button ID based on what the visitor enters in the pre-chat form.
-            // Returns a valid button ID.
-            
-            if (prechatFormData[3].value === "Life")
-                {
-                    return "5733z000000TRAb";
-                }
-                if (prechatFormData[3].value === "Pension")
-                {
-                    return "5733z000000TR6O";
-                }
-
-        };
+        
       
 embedded_svc.settings.extraPrechatInfo = [{
   "entityFieldMaps": [{
