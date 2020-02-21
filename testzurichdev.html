@@ -28,17 +28,6 @@
         embedded_svc.settings.disabledMinimizedText = 'Agent Offline'; //(Defaults to Agent Offline)
         embedded_svc.settings.avatarImgURL = "https://customer-zukl--capitadev--c.cs110.visual.force.com/resource/1581516337000/AgentIcon";
         embedded_svc.settings.chatbotAvatarImgURL = "https://customer-zukl--capitadev.cs110.my.salesforce.com/0810C0000008sB4";
-        //embedded_svc.settings.loadingText = ''; //(Defaults to Loading)
-        //embedded_svc.settings.storageDomain = 'yourdomain.com'; //(Sets the domain for your deployment so that visitors can navigate subdomains during a chat session)
-
-        // Settings for Chat
-        //embedded_svc.settings.directToButtonRouting = function(prechatFormData) {
-            // Dynamically changes the button ID based on what the visitor enters in the pre-chat form.
-            // Returns a valid button ID.
-        
-        
-        //};
-        
         embedded_svc.settings.extraPrechatInfo = [{
   "entityFieldMaps": [{
     "doCreate":true,
@@ -86,10 +75,6 @@
   "entityName":"Contact"
 }
 ];
-        //embedded_svc.settings.prepopulatedPrechatFields = [{"label":"Consent provided", "transcriptFields": ["Consent_provided__c"]}]; 
-        //embedded_svc.settings.extraPrechatFormDetails = [{"label":"Consent provided", "transcriptFields": ["Consent_provided__c"]}];
-        //embedded_svc.settings.fallbackRouting = []; //An array of button IDs, user IDs, or userId_buttonId
-        //embedded_svc.settings.offlineSupportMinimizedText = '...'; //(Defaults to Contact Us)
 
         embedded_svc.settings.enabledFeatures = ['LiveAgent'];
         embedded_svc.settings.entryFeature = 'LiveAgent';
