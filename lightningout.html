@@ -1,0 +1,16 @@
+<script src="https://curious-moose-vuaryj-dev-ed.my.salesforce.com/lightning/lightning.out.js"></script>
+
+<script>
+    $Lightning.use("c:SalesforceAddApp",    // name of the Lightning app
+        function() {                  // Callback once framework and app loaded
+            $Lightning.createComponent(
+                "c:SalesforceAdda_Account", // top-level component of your app
+                { },                  // attributes to set on the component when created
+                "lightningLocator",   // the DOM location to insert the component
+                function(cmp) {
+                    // callback when component is created and active on the page
+                }
+            );
+        }
+    );
+</script>
